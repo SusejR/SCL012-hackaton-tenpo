@@ -109,7 +109,7 @@ const formTwo = () => {
   
   <div class="container section">
   
-  <div id="idModal2" class="modal">
+  <div id="idModal" class="modal">
   <div class="modal-content">
     <h5>Gracias por tus comentarios!!</h5>
     <i class="iconModal far fa-smile"></i>
@@ -152,14 +152,15 @@ const formTwo = () => {
 
 const btnModal = document.getElementById("btnModal");
 btnModal.addEventListener('click', () => {
-   document.getElementById('idModal2').style.display="block";
+   document.getElementById('idModal').style.display="block";
+   
  console.log('yo sirvo');
 })
 
 const btnClose = document.getElementById("btnClose");
 btnClose.addEventListener('click', () => {
   state();
-   document.getElementById('idModal2').style.display="none";
+   document.getElementById('idModal').style.display="none";
  
 })
 
