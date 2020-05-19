@@ -277,7 +277,9 @@ const formQuestionsOne = () => {
 const formQuestionsTwo = () => {
   h1Header.innerHTML = `Preguntas Frecuentes`
   root.innerHTML = `<div class="col s12 divGrande">
-  <p center>¿Como me registro en la App</p>
+  <div class="titulo">
+  <p>¿Como me registro en la App</p>
+  </div>
   <div class="content">
   <p>Sólo debes descargar la App Tenpo, 
   seleccionar el botón “Crear nueva cuenta 
