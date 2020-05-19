@@ -281,9 +281,12 @@ const formQuestionsTwo = () => {
   <p>¿Como me registro en la App</p>
   </div>
   <div class="content">
+  <div class="tex">
   <p>Sólo debes descargar la App Tenpo, 
   seleccionar el botón “Crear nueva cuenta 
   y completar la información que se te solicita.</p>
+  <p>Te recomendamos tener tu cédula de identidad a la mano al momento de ingresa tus datos.</p>
+  </div>
   <img src="component.png">
   </div>
   <div class="bar">
