@@ -36,12 +36,50 @@ const feedback = () => {
 }
 
 
+// const state = () => {
+//   h1Header.innerHTML=`<div class="cheader">
+//   <i class="far fa-check-circle"></i>
+//   <i class="fas fa-file-alt"></i>
+//   <i class="fas fa-lightbulb"></i>
+//   <i class="far fa-comment-alt"></i>
+//   </div>
+//   <div class="dheader">
+//   <p>Envío</p>
+//   <p>Recepción</p>
+//   <p>Solución</p>
+//   <p>Respuesta</p></div>`
+//   root.innerHTML=`<div class="col s12 divGrande">
+//    <div class="containerone">
+//     <p>Estado del Caso #56478</p>
+//    <div class="divider"></div>
+//    <p>Fecha de inicio  17/05/2020</p>
+//    <p>Fecha de termino  22/05/2020</p>
+//    <p>Estado : Solicitud enviada</p>
+//    <p>Mensaje respuesta :  - - -</p>
+//    </div>
+//     <div class="section">
+//     <p>Historial</p>
+//     <button class="hi" id="hola1">Caso  # 12478</button>
+//     <button class="hi" id="hola">Caso  # 08746</button>
+//     <button class="hi" id="hola">Caso  # 00998</button>
+//     </div>
+//     </div>
+//   </div>`
+
 const state = () => {
-  h1Header.innerHTML=`<div class="cheader">
+  h1Header.innerHTML=`Preguntas Frecuentes`
+  root.innerHTML=`<div class="col s12 divGrande">
+  <p center>¿Como me registro en la App</p>
+  <div class="content">
+  <p>Sólo debes descargar la App Tenpo, seleccionar el botón “Crear nueva cuenta y completar la información que se te solicita.</p>
+  <img src="component.png">
+  </div>
+  <div class="bar">
+  <p> Fué util este articulo?
+  </div>
+  <div class="bart">
+  <i class="far fa-times-circle"></i>
   <i class="far fa-check-circle"></i>
-  <i class="fas fa-file-alt"></i>
-  <i class="fas fa-lightbulb"></i>
-  <i class="far fa-comment-alt"></i>
   </div>
   <div class="dheader">
   <p>Envío</p>
@@ -239,7 +277,9 @@ const formQuestionsOne = () => {
 const formQuestionsTwo = () => {
   h1Header.innerHTML = `Preguntas Frecuentes`
   root.innerHTML = `<div class="col s12 divGrande">
-  <p center>¿Como me registro en la App</p>
+  <div class="titulo">
+  <p>¿Como me registro en la App</p>
+  </div>
   <div class="content">
   <p>Sólo debes descargar la App Tenpo, 
   seleccionar el botón “Crear nueva cuenta 
