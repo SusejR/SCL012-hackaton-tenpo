@@ -19,36 +19,46 @@ const feedback = () => {
 
 }
 
+// const state = () => {
+//   h1Header.innerHTML=`<div class="cheader">
+//   <i class="far fa-check-circle"></i>
+//   <i class="fas fa-file-alt"></i>
+//   <i class="fas fa-lightbulb"></i>
+//   <i class="far fa-comment-alt"></i>
+//   </div>
+//   <div class="dheader">
+//   <p>Envío</p>
+//   <p>Recepción</p>
+//   <p>Solución</p>
+//   <p>Respuesta</p></div>`
+//   root.innerHTML=`<div class="col s12">
+//    <div class="containerone">
+//     <p>Estado del Caso #56478</p>
+//    <div class="divider"></div>
+//    <p>Fecha de inicio  17/05/2020</p>
+//    <p>Fecha de termino  22/05/2020</p>
+//    <p>Estado : Solicitud enviada</p>
+//    <p>Mensaje respuesta :  - - -</p>
+//    </div>
+//    <p>Historial</p>
+//    <div class="col s12">
+//     <div class="section">
+//     <button class="hi" id="hola">Caso  # 12478</button>
+//     <button class="hi" id="hola">Caso  # 08746</button>
+//     <button class="hi" id="hola">Caso  # 00998</button>
+//     </div>
+//     </div>
+//    </div>
+//   </div>`
+// }
 const state = () => {
-  h1Header.innerHTML=`<div class="cheader">
-  <i class="far fa-check-circle"></i>
-  <i class="fas fa-file-alt"></i>
-  <i class="fas fa-lightbulb"></i>
-  <i class="far fa-comment-alt"></i>
-  </div>
-  <div class="dheader">
-  <p>Envío</p>
-  <p>Recepción</p>
-  <p>Solución</p>
-  <p>Respuesta</p></div>`
+  h1Header.innerHTML=`Preguntas Frecuentes`
   root.innerHTML=`<div class="col s12">
-   <div class="containerone">
-    <p>Estado del Caso #56478</p>
-   <div class="divider"></div>
-   <p>Fecha de inicio  17/05/2020</p>
-   <p>Fecha de termino  22/05/2020</p>
-   <p>Estado : Solicitud enviada</p>
-   <p>Mensaje respuesta :  - - -</p>
-   </div>
-   <p>Historial</p>
-   <div class="col s12">
-    <div class="section">
-    <button class="hi" id="hola">Caso  # 12478</button>
-    <button class="hi" id="hola">Caso  # 08746</button>
-    <button class="hi" id="hola">Caso  # 00998</button>
-    </div>
-    </div>
-   </div>
+  <div class="conTainertarjet">
+   <img src="face.png"> 
+   <img src="new.png">
+   </div> 
+   
   </div>`
 }
 

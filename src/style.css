@@ -296,4 +296,13 @@ header {
         justify-content: space-evenly;
         font-size: 10px;
     }
+
+    .conTainertarjet {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        margin-bottom: -10;
+    }
    
