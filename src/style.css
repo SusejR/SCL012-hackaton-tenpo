@@ -294,6 +294,7 @@ background-color: rgb(235, 235, 235);
        }
        .aout{
            display: flex;
+           justify-content: center;
            margin-top: 10px;
        }
 
@@ -305,7 +306,26 @@ background-color: rgb(235, 235, 235);
    .modal {
        position: absolute !important;
    }
-
+   .divGrande {
+       padding: 6%;
+       
+   }
+   .cajaCall {
+    display: flex;
+    justify-content: center;
+    flex:   auto;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid #00BAA4;
+    margin: 5%;
+    font-size: x-small;
+    margin-bottom: 1%;
+}   
+#btnCall{
+    margin-left: 5%;
+}
     @media all and (min-width: 1000px){
  .buttons{
         width: 30%;

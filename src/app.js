@@ -293,10 +293,16 @@ const formQuestionsTwo = () => {
   <i class="far fa-times-circle"></i>
   <i class="far fa-check-circle"></i>
   </div>
-  <div class="aout">
-  <img src="tienes.png">
-  </div>
+  <div class="cajaCall">
+  <div class="text">
+  <h6><strong>¿Tienes otra duda?, te ayudamos.</strong></h6>
+  <button class="btn" id="btnCall"><i class="fas fa-headset"></i><strong> Atención al Cliente</strong></button>
+  <p><strong>Horario de Atención: <strong>Lunes a Viernes 08:00-23:00 hrs. Sábados, Domingos y Festivos 09:00-23:00 hrs.</p></div>
+  </div>  
    </div>`
+
+   const btnCall = document.getElementById('btnCall');
+   btnCall.addEventListener('click', clientAtention);
  
 }
 
