@@ -315,6 +315,12 @@ background-color: rgb(235, 235, 235);
     /* padding: 5%; */
     max-width: 100%;
 }
+.case {
+    border-radius: 1em;
+    width: 500px !important;
+    height: 700px !important;
+    margin-bottom: 5%;
+}
 
     }
     @media all and (max-width: 800px){
