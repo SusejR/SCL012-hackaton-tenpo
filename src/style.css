@@ -297,6 +297,8 @@ background-color: rgb(235, 235, 235);
            justify-content: center;
            margin-top: 10px;
        }
+       .text{
+           display: grid;       }
 
 
 
