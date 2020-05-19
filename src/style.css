@@ -296,6 +296,8 @@ background-color: rgb(235, 235, 235);
            display: flex;
            margin-top: 10px;
        }
+       .text{
+           display: grid;       }
 
 
 
