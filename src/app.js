@@ -65,6 +65,7 @@ const feedback = () => {
 //     </div>
 //     </div>
 //   </div>`
+
 const state = () => {
   h1Header.innerHTML=`Preguntas Frecuentes`
   root.innerHTML=`<div class="col s12 divGrande">
@@ -80,11 +81,29 @@ const state = () => {
   <i class="far fa-times-circle"></i>
   <i class="far fa-check-circle"></i>
   </div>
-  <div class="aout">
-  <img src="tienes.png">
-  </div>
-   </div>`
-
+  <div class="dheader">
+  <p>Envío</p>
+  <p>Recepción</p>
+  <p>Solución</p>
+  <p>Respuesta</p></div>`
+  root.innerHTML=`<div class="col s12">
+   <div class="containerone">
+    <p>Estado del Caso #56478</p>
+   <div class="divider"></div>
+   <p>Fecha de inicio  17/05/2020</p>
+   <p>Fecha de termino  22/05/2020</p>
+   <p>Estado : Solicitud enviada</p>
+   <p>Mensaje respuesta :  - - -</p>
+   </div>
+   
+    <div class="section">
+    <p>Historial</p>
+    <button class="hi" id="hola1">Caso  # 12478</button>
+    <button class="hi" id="hola">Caso  # 08746</button>
+    <button class="hi" id="hola">Caso  # 00998</button>
+    </div>
+    </div>
+  </div>`
   const case1 = document.getElementById("hola1");
   case1.addEventListener("click", cambiaEstado);
 }
@@ -101,7 +120,7 @@ const cambiaEstado = () => {
   <p>Recepción</p>
   <p>Solución</p>
   <p>Respuesta</p></div>`
-  root.innerHTML=`<div class="col s12">
+  root.innerHTML=`<div class="col s12 divGrande">
    <div class="containerone">
     <p>Estado del Caso #12478</p>
    <div class="divider"></div>
@@ -117,17 +136,34 @@ const cambiaEstado = () => {
     <button class="hi" id="hola">Caso  # 00998</button>
     </div>
     </div>
+
   </div>`
 }
 
 const formTwo = () => {
   h1Header.innerHTML = `Formulario Feedback`
   root.innerHTML = `
+
+  
+  <div class="container section">
+  
+  <div id="idModal" class="modal">
+  <div class="modal-content">
+    <h5>Gracias por tus comentarios!!</h5>
+    <i class="iconModal far fa-smile"></i>
+    <p>Estamos trabajando para entregarte un mejor servicio.
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn modal-close" id="btnClose">Cerrar</a>
+  </div>
+</div>
+</div>
+  
+        
+
   <div class="containerTarjet">
   <p class="infoClass">Información del Caso</p>
-  <div class="progress">
-  <div class="indeterminate"></div>
-</div>
+  <div class="hr"> </div>
   <select class="browser-default">
     <option value="" disabled selected>Selecciona una opción</option>
     <option value="1">Pago de cuentas</option>
@@ -144,9 +180,27 @@ const formTwo = () => {
           accept=".jpg, .jpeg, .png"/>
   </div>
  
-    <button class="btn">Enviar</button>
+  <button class="btn modal-trigger" data-target="idModal2" id="btnModal">Enviar</button>
   </div>
+
+
   </div>`
+
+const btnModal = document.getElementById("btnModal");
+btnModal.addEventListener('click', () => {
+   document.getElementById('idModal').style.display="block";
+   
+ console.log('yo sirvo');
+})
+
+const btnClose = document.getElementById("btnClose");
+btnClose.addEventListener('click', () => {
+  state();
+   document.getElementById('idModal').style.display="none";
+ 
+})
+
+
 }
 
 const clientAtention = () => {
@@ -168,8 +222,6 @@ const clientAtention = () => {
   <p><strong>Horario de Atención: <strong>Lunes a Viernes 08:00-23:00 hrs. Sábados, Domingos y Festivos 09:00-23:00 hrs.</p></div>
   </div>  
   `
-
-  
 }
 
 const formulario = () => {
@@ -178,17 +230,71 @@ const formulario = () => {
   <div class="containerPF">
 
   <div class="containerImg">
-  <a id="questions" href=""  target="_blank"> <img class="imgFeedback" src="./img/img1.png"></a>
-  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img2.png"></a>
-  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img3.png"></a>
-  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img4.png"></a>
-  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img5.png"></a>
-  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img6.png"></a>
-  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img7.png"></a>
-  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img8.png"></a>
+  <a id="questions"> <img class="imgFeedback" src="./img/img1.png"></a>
+  <a id="questions"> <img class="imgFeedback" src="./img/img2.png"></a>
+  <a id="questions"> <img class="imgFeedback" src="./img/img3.png"></a>
+  <a id="questions"> <img class="imgFeedback" src="./img/img4.png"></a>
+  <a id="questions"> <img class="imgFeedback" src="./img/img5.png"></a>
+  <a id="questions"> <img class="imgFeedback" src="./img/img6.png"></a>
+  <a id="questions"> <img class="imgFeedback" src="./img/img7.png"></a>
+  <a id="questions"> <img class="imgFeedback" src="./img/img8.png"></a>
   </div>
-
   </div>`
+
+  const questions = document.getElementById("questions");
+  questions.addEventListener("click", formQuestionsOne); 
+ 
+}
+
+const formQuestionsOne = () => {
+  h1Header.innerHTML = `Preguntas Frecuentes`
+  root.innerHTML = `
+  <div class="containerPF">
+
+  <div class="containerImg">
+  <img class="imgFeedback" src="./img/ten14.png">
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten01.png"></a>
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten02.png"></a>
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten03.png"></a>
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten04.png"></a>
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten05.png"></a>
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten06.png"></a>
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten07.png"></a>
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten08.png"></a>
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten09.png"></a>
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten10.png"></a>
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten11.png"></a>
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten12.png"></a>
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten13.png"></a>
+  
+  </div>
+  </div>`
+
+  const questionsTwo = document.getElementById("questionsTwo");
+  questionsTwo.addEventListener("click", formQuestionsTwo); 
+}
+
+const formQuestionsTwo = () => {
+  h1Header.innerHTML = `Preguntas Frecuentes`
+  root.innerHTML = `<div class="col s12 divGrande">
+  <p center>¿Como me registro en la App</p>
+  <div class="content">
+  <p>Sólo debes descargar la App Tenpo, 
+  seleccionar el botón “Crear nueva cuenta 
+  y completar la información que se te solicita.</p>
+  <img src="component.png">
+  </div>
+  <div class="bar">
+  <p> Fué util este articulo?
+  </div>
+  <div class="bart">
+  <i class="far fa-times-circle"></i>
+  <i class="far fa-check-circle"></i>
+  </div>
+  <div class="aout">
+  <img src="tienes.png">
+  </div>
+   </div>`
  
 }
 
