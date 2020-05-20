@@ -48,6 +48,8 @@ header {
     background-color: white;
     padding: 13%;
     margin: -7% 0% 12% 0%;
+    color: #595959;
+    font-family: 'Ralweway', sans-serif;
 }
 
 
@@ -159,10 +161,10 @@ textarea {
     display: flex;
     /* flex-direction: column; */
     width: 90%;
-    text-align: center;
+    /* text-align: center; */
     align-items: center;
     justify-content: center;
-    margin: -5% 10% 10% 10%;
+    margin: -5% 10% 10% 20%;
     border-radius: 20px;
 }
 
