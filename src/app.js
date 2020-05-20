@@ -67,19 +67,11 @@ const feedback = () => {
 //   </div>`
 
 const state = () => {
-  h1Header.innerHTML=`Preguntas Frecuentes`
-  root.innerHTML=`<div class="col s12 divGrande">
-  <p center>¿Como me registro en la App</p>
-  <div class="content">
-  <p>Sólo debes descargar la App Tenpo, seleccionar el botón “Crear nueva cuenta y completar la información que se te solicita.</p>
-  <img src="component.png">
-  </div>
-  <div class="bar">
-  <p> Fué util este articulo?
-  </div>
-  <div class="bart">
-  <i class="far fa-times-circle"></i>
+  h1Header.innerHTML=`<div class="cheader">
   <i class="far fa-check-circle"></i>
+  <i class="fas fa-file-alt"></i>
+  <i class="fas fa-lightbulb"></i>
+  <i class="far fa-comment-alt"></i>
   </div>
   <div class="dheader">
   <p>Envío</p>
