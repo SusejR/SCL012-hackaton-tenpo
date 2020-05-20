@@ -173,7 +173,7 @@ const clientAtention = () => {
   <img class="img" src="./img/mensaje.jpg">
   <div class="text">
   <h5>Te ayudamos</h5>
-  <a href="https://wa.me/56958048564" class="btn"><i class="fab fa-whatsapp"></i> WHATSAPP SOPORTE</a>
+  <a href="https://wa.me/56958048564" class="btn" target="_blank"><i class="fab fa-whatsapp"></i> WHATSAPP SOPORTE</a>
   <p><strong>Horario de Atención: <strong>Lunes a Viernes 08:00-23:00 hrs. Sábados, Domingos y Festivos 09:00-23:00 hrs.</p></div>
   </div>
   <div class="caja">
