@@ -328,6 +328,10 @@ background-color: rgb(235, 235, 235);
 #btnCall{
     margin-left: 5%;
 }
+.infografia{
+    width: 120px;
+    height: 190px;
+}
     @media all and (min-width: 1000px){
  .buttons{
         width: 30%;

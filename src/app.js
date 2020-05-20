@@ -36,36 +36,6 @@ const feedback = () => {
 }
 
 
-// const state = () => {
-//   h1Header.innerHTML=`<div class="cheader">
-//   <i class="far fa-check-circle"></i>
-//   <i class="fas fa-file-alt"></i>
-//   <i class="fas fa-lightbulb"></i>
-//   <i class="far fa-comment-alt"></i>
-//   </div>
-//   <div class="dheader">
-//   <p>Envío</p>
-//   <p>Recepción</p>
-//   <p>Solución</p>
-//   <p>Respuesta</p></div>`
-//   root.innerHTML=`<div class="col s12 divGrande">
-//    <div class="containerone">
-//     <p>Estado del Caso #56478</p>
-//    <div class="divider"></div>
-//    <p>Fecha de inicio  17/05/2020</p>
-//    <p>Fecha de termino  22/05/2020</p>
-//    <p>Estado : Solicitud enviada</p>
-//    <p>Mensaje respuesta :  - - -</p>
-//    </div>
-//     <div class="section">
-//     <p>Historial</p>
-//     <button class="hi" id="hola1">Caso  # 12478</button>
-//     <button class="hi" id="hola">Caso  # 08746</button>
-//     <button class="hi" id="hola">Caso  # 00998</button>
-//     </div>
-//     </div>
-//   </div>`
-
 const state = () => {
   h1Header.innerHTML=`<div class="cheader">
   <i class="far fa-check-circle"></i>
@@ -279,7 +249,7 @@ const formQuestionsTwo = () => {
   y completar la información que se te solicita.</p>
   <p>Te recomendamos tener tu cédula de identidad a la mano al momento de ingresa tus datos.</p>
   </div>
-  <img src="component.png">
+  <img class="infografia" src="./img/capture.png" alt="infografía">
   </div>
   <div class="bar">
   <p> Fué util este articulo?
